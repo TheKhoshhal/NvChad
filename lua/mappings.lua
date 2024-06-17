@@ -7,7 +7,7 @@ local bufnr = vim.api.nvim_get_current_buf()
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
-map("n", "<leader>a", function()
+map("n", "<leader>ca", function()
   vim.cmd.RustLsp "codeAction"
 end, { silent = true, buffer = bufnr })
 
