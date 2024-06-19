@@ -30,6 +30,7 @@ return {
         "rustfmt",
         "gopls",
         "goimports",
+        "bash-language-server",
       },
     },
   },
