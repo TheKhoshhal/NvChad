@@ -113,5 +113,9 @@ return {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
   },
-  { "nyarthan/telescope-code-actions.nvim" },
+  {
+    "stevearc/dressing.nvim",
+    lazy = false,
+    opts = {},
+  },
 }
