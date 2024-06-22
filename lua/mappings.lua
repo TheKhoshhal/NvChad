@@ -19,8 +19,4 @@ map("n", "<leader>gd", function()
   vim.lsp.buf.definition()
 end, { desc = "go to defintion" })
 
-map("n", "<leader>rn", function()
-  vim.lsp.buf.rename()
-end, { desc = "rename" })
-
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
