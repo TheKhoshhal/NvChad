@@ -48,6 +48,16 @@ return {
     },
   },
   {
+    "rayliwell/tree-sitter-rstml",
+    lazy = false,
+    dependencies = { "nvim-treesitter" },
+    build = ":TSUpdate",
+    config = function()
+      require("tree-sitter-rstml").setup()
+    end,
+  },
+
+  {
     "Pocco81/auto-save.nvim",
     lazy = false,
     opts = function()
