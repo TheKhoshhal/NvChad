@@ -23,6 +23,7 @@ return {
         "lua-language-server",
         "stylua",
         "html-lsp",
+        "htmx-lsp",
         "css-lsp",
         "prettier",
         "rust-analyzer",
@@ -127,5 +128,13 @@ return {
     "stevearc/dressing.nvim",
     lazy = false,
     opts = {},
+  },
+  {
+    "alvan/vim-closetag",
+    lazy = false,
+  },
+  {
+    "AndrewRadev/tagalong.vim",
+    lazy = false,
   },
 }
