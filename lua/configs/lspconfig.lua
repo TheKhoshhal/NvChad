@@ -24,11 +24,11 @@ lspconfig.tsserver.setup {
 
 lspconfig.gleam.setup({})
 
-lspconfig.html.setup({
-    on_attach = on_attach,
-    capabilities = capabilities,
-    filetypes = { "html", "templ" },
-})
+-- lspconfig.html.setup({
+--     on_attach = on_attach,
+--     capabilities = capabilities,
+--     filetypes = { "html", "templ" },
+-- })
 
 lspconfig.htmx.setup({
     on_attach = on_attach,
