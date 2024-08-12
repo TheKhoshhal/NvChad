@@ -137,4 +137,34 @@ return {
     "AndrewRadev/tagalong.vim",
     lazy = false,
   },
+  {
+    "supermaven-inc/supermaven-nvim",
+    lazy = false,
+    config = function()
+      require("supermaven-nvim").setup {
+        keymaps = {
+          accept_suggestion = "<A-f>",
+          clear_suggestion = "<A-g>",
+          accept_word = "<A-h>",
+        },
+        ignore_filetypes = { cpp = true },
+        color = {
+          suggestion_color = "#808080",
+          cterm = 244,
+        },
+        log_level = "info", -- set to "off" to disable logging completely
+        disable_inline_completion = false, -- disables inline completion for use with cmp
+        disable_keymaps = false, -- disables built in keymaps for more manual control
+      }
+    end,
+  },
+  -- {
+  --   "monkoose/neocodeium",
+  --   event = "VeryLazy",
+  --   config = function()
+  --     local neocodeium = require "neocodeium"
+  --     neocodeium.setup()
+  --     vim.keymap.set("i", "<A-f>", neocodeium.accept)
+  --   end,
+  -- },
 }
