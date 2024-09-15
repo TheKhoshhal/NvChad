@@ -26,7 +26,6 @@ return {
         "htmx-lsp",
         "css-lsp",
         "prettier",
-        "rust-analyzer",
         "pyright",
         "rustfmt",
         "gopls",
