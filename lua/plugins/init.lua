@@ -23,7 +23,6 @@ return {
         "lua-language-server",
         "stylua",
         "html-lsp",
-        "htmx-lsp",
         "css-lsp",
         "prettier",
         "pyright",
