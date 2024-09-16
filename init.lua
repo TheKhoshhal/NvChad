@@ -41,3 +41,10 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "*.slint",
+  callback = function()
+    vim.cmd("set filetype=slint")
+  end,
+})
